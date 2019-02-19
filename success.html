@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sucessfully uploaded</title>
+</head>
+<body>
+Successfully Uploaded!!!!!
+<h1>Sushmitha Nagarajan ID - 1001556348</h1>
+<form id="success" action ="/Limit" method ="POST" enctype="multipart/form-data">
+Limit:<input type="text" name="limit" placeholder="limit">
+    <br>
+    <br>
+      Execute:  <input id="button" type="submit" value="submit">
+    Time Taken :{{ time1 }}
+
+</form>
+<form id ="queryexec" action = "/querywithparam" method="POST" enctype="multipart/form-data">
+satavg1:<input type="text" name="satavg1" placeholder="satavg">
+satavg2:<input type="text" name="satavg2" placeholder="satavg">
+zip1:<input type="text" name="zip1" placeholder="zip">
+zip2:<input type="text" name="zip2" placeholder="zip">
+    <br>
+    <br>
+Execute:  <input id="button" type="submit" value="Compute">
+Time Taken:{{time2}}
+Result: {{result}}
+</form>
+<form id="success" action ="/memexec" method ="POST" enctype="multipart/form-data">
+Memexecute data here
+<br>
+Limit:<input type="text" name="limit" placeholder="limit">
+    <br>
+    <br>
+      Execute:  <input id="button" type="submit" value="submit">
+    
+
+</form>
+
+</body>
+</html>
